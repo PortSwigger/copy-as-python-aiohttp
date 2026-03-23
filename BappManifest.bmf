@@ -2,12 +2,12 @@ Uuid: 2945c0fa6ed9448196f24dceabcc84da
 ExtensionType: 1
 Name: Copy as Python aiohttp
 RepoName: copy-as-python-aiohttp
-ScreenVersion: v1.1.1
-SerialVersion: 1
+ScreenVersion: 1.1.2
+SerialVersion: 2
 MinPlatformVersion: 15
 ProOnly: False
 Author: y0k4i
 ShortDescription: Generates async Python code from HTTP requests.
-EntryPoint: copy-as-python-aiohttp/build/libs/copy-as-python-aiohttp-1.1.1-fat.jar
+EntryPoint: copy-as-python-aiohttp-1.1.2-fat.jar
 BuildCommand: ./gradlew build
 SupportedProducts: Pro, Community
