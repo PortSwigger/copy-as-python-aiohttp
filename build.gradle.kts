@@ -1,3 +1,4 @@
+version = "1.1.2"
 
 plugins {
     // Apply the java-library plugin for API and implementation separation.
