@@ -22,3 +22,6 @@ gradle-app.setting
 
 # Ignore vscode
 .vscode/
+
+# Ignore IDEA
+.idea/
