@@ -9,5 +9,5 @@ ProOnly: False
 Author: y0k4i
 ShortDescription: Generates async Python code from HTTP requests.
 EntryPoint: copy-as-python-aiohttp/build/libs/copy-as-python-aiohttp-1.1.1-fat.jar
-BuildCommand: cd copy-as-python-aiohttp && ../gradlew fatJar
+BuildCommand: ./gradlew build
 SupportedProducts: Pro, Community
