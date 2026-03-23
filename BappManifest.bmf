@@ -3,8 +3,8 @@ ExtensionType: 1
 Name: Copy as Python aiohttp
 RepoName: copy-as-python-aiohttp
 ScreenVersion: 1.1.2
-SerialVersion: 2
-MinPlatformVersion: 15
+SerialVersion: 3
+MinPlatformVersion: 29
 ProOnly: False
 Author: y0k4i
 ShortDescription: Generates async Python code from HTTP requests.
