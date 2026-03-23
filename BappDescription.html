@@ -1,13 +1,34 @@
-<p>About</p>
+<p>This extension generates async Python code from HTTP requests.</p>
 
-<p>A Burp extension to generate async Python code from HTTP requests.<br>
-This extension generates different flavors of scripts (e.g. with/without session, with/without main function).<br>
-The resulting codes have been tested with Python 3.11.2 but they should work with other versions as well.</p>
+<p>This extension generates different flavors of scripts (e.g. with/without session, with/without main function).
+	The resulting codes have been tested with Python 3.14.3 but they should work with other versions as well.</p>
 
-<p>Features</p>
+<h2>Features</h2>
 
 <ul>
 	<li>Generate individual async functions from requests</li>
 	<li>Combine multiple requests into a single session</li>
-	<li>Generate async script for password spraying attacks</li>
+	<li>Generate async scripts for password spraying attacks</li>
 </ul>
+
+<h2>Usage</h2>
+
+<ol>
+	<li>Right-click on any HTTP requests and select the "Copy as Python aiohttp" option to generate the corresponding
+		Python code.</li>
+	<li>There are four different options to choose from in the main context menu:
+		<ul>
+			<li>Copy requests: generates individual async functions for each selected request.</li>
+			<li>Copy requests with session object: generates individual async functions for each selected request where
+				a session object is passed as an argument to the function.</li>
+			<li>Generate script: has the same options as above but combines all the requests into a single script with a
+				main function.</li>
+			<li>Generate password spraying template: generates a template script for password spraying attacks.</li>
+		</ul>
+	</li>
+	<li>Remember to customize the generated code as needed, especially the password spraying template, which is meant to
+		be a starting point for your attacks.</li>
+</ol>
+
+<p><strong>Note:</strong> Before running the resulting Python code snippet on your host machine, make sure to install
+	the required dependencies with <code class="InlineCode">pip install 'aiohttp[speedups]' aiofiles aiocsv</code></p>
